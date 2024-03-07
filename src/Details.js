@@ -8,6 +8,9 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
+
+const cloudFrontUrl = 'https://d10orkjie08mwi.cloudfront.net/4bfe49d0-d4a2-4f09-af62-70949edeadd0/S1940E01 - Puss Gets The Boot (1080p BluRay x265 Ghost).mp4';
+
 export default function Details() {
     let location = useLocation();
     let data = location.state?.data
@@ -18,18 +21,16 @@ export default function Details() {
                 <iframe
                     width="100%" 
                     height="500" 
-                    src="https://www.youtube.com/embed/kYrUWfLlYI0" 
+                    src={cloudFrontUrl} 
                     title="YouTube Video"
                     frameborder="0"
                     allowfullscreen
                 ></iframe>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        {data?.label}
+                        Puss Gets The Boot (1080p BluRay x265 Ghost)
                     </Typography>
-                    <Typography variant="body2" color="#b8b8b8">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+                    <Typography variant="body2" color="#b8b8b8">Enjoy Tom and Jerry!
                     </Typography>
                 </CardContent>
             </Card>
